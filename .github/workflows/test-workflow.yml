@@ -7,19 +7,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: caching
-        id: caching
-        uses: actions/cache@v4
-        with: 
-          path: ~/.cache
-          key: cache-61082b0
-        
-      - name: prime-cache-61082b0
-        run: echo "Cache status - ${{ steps.caching.outputs.cache-hit }}"
-
       - name: 24f2002446@ds.study.iitm.ac.in
         run: echo "Hello, world!"
-      
