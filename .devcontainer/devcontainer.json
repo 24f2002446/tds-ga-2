@@ -1,0 +1,14 @@
+{
+  "name": "ga2-d5b184",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "1.7.1"
+    }
+  },
+  "customizations": {
+		"vscode": {
+			"extensions": ["astral-sh.uv", "ms-python.python"]
+		}
+  },
+  "postCreateCommand ": "uv pip install fastapi"
+}
