@@ -36,7 +36,7 @@ async def root():
 async def post(data: Data):
     item = data.model_dump()
 
-    with open("q-vercel-latency.json", "r") as f:
+    with open("data.json", "r") as f:
         regions_data = json.load(f).get("regions", [])
 
     result = []
